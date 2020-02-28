@@ -1,40 +1,93 @@
 @font-face {
-  font-family: "Vazir";
-  font-weight: normal;
-  src: url("../fonts/Vazir.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Vazir";
-  font-weight: bold;
-  src: url("../fonts/Vazir-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Vazir";
+  font-family: IRANSans;
+  font-style: normal;
   font-weight: 900;
-  src: url("../fonts/Vazir-Black.woff2") format("woff2");
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/eot/IRANSansWeb(FaNum).eot');
+  src: url('../fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),
+  url('../fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+  url('../fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),
+  url('../fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
 }
 html,
 body {
-  background-color: #0087cb;
+  background-color: #000000;
   color: #fdfffc;
   direction: rtl;
-  font-family: "Vazir", sans-serif;
+  font-family: "IRANSans", sans-serif;
   text-align: right;
+  font-weight: 100;
 }
 .container.main {
   padding-top: 2em;
 }
 h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.8em;
 }
 h2 {
-  font-weight: 900;
+  font-weight: 400;
   font-size: 1.4em;
 }
 h3 {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.1em;
+}
+p {
+  font-weight: 300;
+  font-size: 1em;
+}
+.subtitle {
+  color: #0087cb;
 }
 .stats .row span {
   display: block;
@@ -97,4 +150,30 @@ a:hover {
 }
 .legend .high {
   background-color: #e71d36;
+}
+.stats {
+  padding:10px;
+  background-color: #222222;
+  border: 1px solid #363636;
+}
+.stats > .row {
+  border-bottom: 1px solid #363636;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-bottom: 10px;
+}
+.stats > .row:last-child {
+  border-bottom: none;
+}
+#totalCases,#newCases,
+#pTotalCases,#pNewCases {
+  color: rgb(230, 0, 0)
+}
+#totalRecoveries, #newRecoveries,
+#pTotalRecoveries, #pNewRecoveries {
+  color: rgb(112, 168, 0);
+}
+#totalFatalities, #newFatalities,
+#pTotalFatalities, #pNewFatalities {
+  color: rgb(134, 134, 134);
 }
