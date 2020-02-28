@@ -60,7 +60,7 @@
 }
 html,
 body {
-  background-color: #000000;
+  background-color: #011627;
   color: #fdfffc;
   direction: rtl;
   font-family: "IRANSans", sans-serif;
@@ -153,11 +153,11 @@ a:hover {
 }
 .stats {
   padding:10px;
-  background-color: #222222;
-  border: 1px solid #363636;
+  background-color: #001f38;
+  border: 1px solid #003865;
 }
 .stats > .row {
-  border-bottom: 1px solid #363636;
+  border-bottom: 1px solid #003865;
   margin-right: 0px;
   margin-left: 0px;
   padding-bottom: 10px;
